@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Calc() in CSS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <link href="css-inheritance.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <h1>CSS Inheritance: An Introduction</h1>
+
+    <pre class="code"><span class="clr-yellow">.bordered</span>{
+    <span class="clr-blue">border </span>:<span class="clr-value"> 2px solid black </span>;
+    <span class="clr-blue">margin </span>:<span class="clr-value"> 10px </span>;
+    <span class="clr-blue">padding </span>:<span class="clr-value"> 20px </span>;
+}</pre>
+    <pre class="code"><span class="clr-yellow">p,ul,li,a</span>{
+    <span class="clr-blue">border </span>:<span class="clr-value"> inherit </span>;
+    <span class="clr-blue">margin </span>:<span class="clr-value"> inherit </span>;
+    <span class="clr-blue">padding </span>:<span class="clr-value"> inherit </span>;
+}</pre>
+    <div class="bordered">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
+        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
+        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
+        mollit anim id est laborum.</p>
+
+        <ul>
+            <li><a href="#" style="color: blue;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</a></li>
+            <li>Aliquam tincidunt mauris eu risus.</li>
+            <li><a href="#" style="color: blue;">Another link to SitePoint</a>.</li>
+            <li>Vestibulum auctor dapibus neque.</li>
+        </ul>
+    </div>
+    <pre class="code"><span class="clr-yellow">p</span>{
+<span class="clr-blue">color </span>:<span class="clr-value">red </span>;
+}</pre>
+    <pre class="code"><span class="clr-yellow">a</span>{
+<span class="clr-blue">color </span>:<span class="clr-value"> inherit </span>;
+}</pre>
+    <div class="color-inherit">
+        <p class="p-inherit">Lorem ipsum dolor sit amet, <a href="#">consectetur adipiscing</a> elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
+            ex ea commodo consequat. <a href="#">Duis aute irure dolor</a> in reprehenderit in voluptate velit esse cillum dolore eu 
+            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
+            mollit anim id est laborum.</p>
+    </div>
+</body>
+
+</html>
